@@ -142,7 +142,7 @@ class FuchsiaExternalViewEmbedder final : public flutter::ExternalViewEmbedder {
     InputInterceptor(scenic::Session* session)
         : opacity_node_(session), shape_node_(session) {
       opacity_node_.SetLabel("Flutter::InputInterceptor");
-      opacity_node_.SetOpacity(0.5f);
+      opacity_node_.SetOpacity(0.0f);
 
       // Set the shape node to capture all input. Any unwanted input will be
       // reinjected.
